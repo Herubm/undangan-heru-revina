@@ -279,7 +279,7 @@ section:hover{
   position: relative;
 }
 
-.turut-scroll{
+.turut-{
   display: flex;
   flex-direction: column;
 }
@@ -300,8 +300,8 @@ section:hover{
   transition: 0.3s;
 }
 
-.turut-scroll{
-  height: 150px; /* tinggi area scroll */
+.turut-{
+  height: 150px; /* tinggi area  */
   overflow: hidden;
   position: relative;
 }
@@ -309,10 +309,10 @@ section:hover{
 .turut-list{
   display: flex;
   flex-direction: column;
-  animation: scrollUp 15s linear infinite;
+  animation: Up 15s linear infinite;
 }
 
-@keyframes scrollUp{
+@keyframes Up{
   0%{
     transform: translateY(0);
   }
@@ -336,27 +336,6 @@ section:hover{
     transform: translateY(0);
   }
 }
-  .turut-col::before,
-.turut-col::after{
-  content:"";
-  position:absolute;
-  left:0;
-  width:100%;
-  height:40px;
-  z-index:2;
-}
-
-.turut-col::before{
-  top:0;
-  background:linear-gradient(to bottom, rgba(0,0,0,1), transparent);
-}
-
-.turut-col::after{
-  bottom:0;
-  background:linear-gradient(to top, rgba(0,0,0,1), transparent);
-}
-
-
 </style>
 </head>
 
@@ -481,7 +460,7 @@ section:hover{
   <div class="turut-col">
     <h3>Pihak Pria</h3>
 
-    <div class="turut-scroll">
+    <div class="turut-">
       
       <!-- LIST ASLI -->
       <div class="turut-list">
@@ -594,7 +573,7 @@ section:hover{
   <div class="turut-col">
     <h3>Pihak Perempuan</h3>
 
-    <div class="turut-scroll">
+    <div class="turut-">
 
       <!-- LIST ASLI -->
       <div class="turut-list">
@@ -827,7 +806,7 @@ section:hover{
 
 
 <script>
-// LOCK SCROLL SEBELUM BUKA
+// LOCK  SEBELUM BUKA
 document.body.classList.add('lock');
 
 // API URL
@@ -886,7 +865,7 @@ setInterval(()=>{
     d+" Hari "+h+" Jam "+m+" Menit";
 },1000);
 
-// ===== ANIMASI SCROLL =====
+// ===== ANIMASI  =====
 const fades = document.querySelectorAll('.fade');
 
 function showOnLoad(){
@@ -1044,7 +1023,7 @@ function tampilUcapan(){
   let scroll = 0;
 
   function animate(){
-    scroll += 0.5; // kecepatan (bisa ubah 0.3 / 0.8)
+    scroll += 0.2; // kecepatan (bisa ubah 0.3 / 0.8)
 
     if(scroll >= content.scrollHeight / 2){
       scroll = 0;
