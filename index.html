@@ -279,7 +279,7 @@ section:hover{
   position: relative;
 }
 
-.turut-{
+.turut-scroll{
   display: flex;
   flex-direction: column;
 }
@@ -287,6 +287,7 @@ section:hover{
 .turut-list p{
   margin:8px 0;
 }
+
 
 
 /* RESPONSIVE HP */
@@ -1036,6 +1037,13 @@ function tampilUcapan(){
 
   animate();
 }
+
+// jalankan untuk kedua kolom
+window.addEventListener("load", function(){
+  autoScrollTurut(".turut-col:nth-child(1)");
+  autoScrollTurut(".turut-col:nth-child(2)");
+});
+
 
 // jalankan untuk kedua kolom
 window.addEventListener("load", function(){
