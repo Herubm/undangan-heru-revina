@@ -337,6 +337,34 @@ section:hover{
     transform: translateY(0);
   }
 }
+  .opening-footer{
+  position:absolute;
+  bottom:20px;
+  text-align:center;
+  font-size:12px;
+  color:rgba(255,255,255,0.6);
+  letter-spacing:1px;
+}
+
+.opening-footer b{
+  color:#fff;
+}
+  .footer{
+  text-align:center;
+  padding:20px 10px;
+  font-size:12px;
+  color:rgba(255,255,255,0.6);
+  background:rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  margin-bottom:60px; /* biar tidak ketutup nav */
+}
+
+.footer b{
+  color:#fff;
+  letter-spacing:1px;
+}
+
+
 </style>
 </head>
 
@@ -372,6 +400,10 @@ section:hover{
 
   <p style="margin-top:15px; font-size:12px; opacity:0.6;">
     *Mohon maaf apabila terdapat kesalahan penulisan nama dan gelar
+  </p>
+  
+  <p class="opening-footer">
+    Made With Proud by <b>AMBAU PROJECT</b>
   </p>
 
 </div>
@@ -1110,6 +1142,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 </script>
-
+<footer class="footer">
+  <p>© 2026 Made With Proud by <b>AMBAU PROJECT</b></p>
+</footer>
 </body>
 </html>
