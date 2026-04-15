@@ -34,7 +34,9 @@ body::before {
 }
 
 body::before{
-  transform: scale(var(--zoom, 1.08));
+  transform: scale(1); /* fix zoom */
+  background-size: cover;
+  background-position: center;
 }
 
 
